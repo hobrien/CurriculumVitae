@@ -68,20 +68,20 @@ tribble(
 
 ```{r}
 tribble(
-  ~ Course,
-  "Advanced Python for Biologists, PR Statistics, February, 2017",
-  "Advancing in R, PR Statistics, April, 2015",
-  "Genetic Data Analysis, Summer Institute in Statistical Genetics, June, 2003"
+  ~ Course, ~ Year, ~ Institution,
+  "Advanced Python for Biologists, PR Statistics, February, 2017", "", "",
+  "Advancing in R, PR Statistics, April, 2015", "", "",
+  "Genetic Data Analysis, Summer Institute in Statistical Genetics, June, 2003", "", ""
 ) %>% 
-  brief_entries(Course)
+  brief_entries(Course, Year, Institution)
 ```
 
 # References
 
 ```{r}
 tribble(
-  ~ Course,
-  "Available on request"
+  ~ Course, ~ Year, ~ Institution,
+  "Available on request", "", ""
 ) %>% 
-  brief_entries(Course)
+  brief_entries(Course, Year, Institution)
 ```
