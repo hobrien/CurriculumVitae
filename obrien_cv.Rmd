@@ -34,22 +34,23 @@ library(tibble)
 ```{r}
 tribble(
   ~ role, ~ company, ~ loc, ~ dates, ~ details,
+  "Senior Bioinformatician", "Sano Genetics", "Cambridge UK", "2022-2022", "Developing pipelines to process generic data",
   "Bioinformatician", "Theolytics", "Oxford UK", "2020-2022", "Managing pipelines and compute architecture for genomic analyses of oncolytic viruses",
   "Bioinformatician", "Theolytics", "Oxford UK", "2020-2022", "Advising on research strategy and on the design and analysis of experiments",
   "Bioinformatician", "Theolytics", "Oxford UK", "2020-2022", "Managing partnerships with other companies and academic scientists",
   "Lead Bioinformatician", "Living DNA", "Frome, UK", "2018-2020", "Leading a team of 6 bioinformaticians and data scientists developing methods to derive ancestry and health insights from  genotyping data",
   "Lead Bioinformatician", "Living DNA", "Frome, UK", "2018-2020", "Working to secure external funding to develop novel genomic prediction approaches",
-    "Lead Bioinformatician", "Living DNA", "Frome, UK", "2018-2020", "Collaboration with the engineering team to deploy processing pipelines at scale and to improve all steps of sample processing and data delivery",
+    "Lead Bioinformatician", "Living DNA", "Frome, UK", "2018-2020", "Collaboration with the engineering team to deploy processing pipelines at scale",
   "Research Associate", "MRC Centre for Neuropsychiatric Genetics and Genomics", "Cardiff, UK", "2016-2018", "Differential gene expression and eQTL analyses on human brain samples", 
   "Research Associate", "MRC Centre for Neuropsychiatric Genetics and Genomics", "Cardiff, UK", "2016-2018", "Integration of functional genomic and large-scale population genetic datasets for schizophrenia and other neurophychiatric disorders", 
   "Research Associate", "MRC Centre for Neuropsychiatric Genetics and Genomics", "Cardiff, UK", "2016-2018", "Organization of training seminars on data science (Rstudio, MySQL), version control (Git), and pipeline development (Snakemake, Bash)",  
    "Research Associate", "MRC Centre for Neuropsychiatric Genetics and Genomics", "Cardiff, UK", "2016-2018", "Deployment of results on the web using R-Shiny",
   "Bioinformatician", "University of Bristol", "Bristol, UK", "2013-2016", "Comparative transcriptomics to determine the genetic basis of cell wall patterning responsible for colour-production in plant leaves",
-"Bioinformatician", "University of Bristol", "Bristol, UK", "2013-2016", "Acting group leader during nine-month family leave cover (overseeing a team of three staff and two students, managing procurement)",
+"Bioinformatician", "University of Bristol", "Bristol, UK", "2013-2016", "Acting group leader for  nine months",
 "Postdoctoral Fellow", "University of Toronto", "Toronto, ON, Canada", "2008-2013", "Comparative analyses of bacterial genomes",
 "Postdoctoral Fellow", "University of Toronto", "Toronto, ON, Canada", "2008-2013", "Cloning of virulence factors and characterization using in-planta infection assays",
 "Lab Administrator", "Duke University",  "Durham, NC, USA", "2006-2008", "Oversight of Microbiology teaching labs",
-"Lab Administrator", "Duke University",  "Durham, NC, USA", "2006-2008", "Managed one lab technician and eight teaching assistants") %>% 
+"Lab Administrator", "Duke University",  "Durham, NC, USA", "2006-2008", "Managing lab technicians and teaching assistants") %>% 
   detailed_entries(role, dates, loc, company, details)
 ```
 
