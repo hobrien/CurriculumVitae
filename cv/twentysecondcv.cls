@@ -145,7 +145,7 @@
 
 		%------------------------------------------------
 
-		{\raggedright\huge\textcolor{mainblue}{\textbf{\cvname}}}
+		{\raggedright\LARGE\textcolor{mainblue}{\textbf{\cvname}}}
 
 		%------------------------------------------------
 

@@ -3,13 +3,13 @@ name: "Heath"
 surname: "O'Brien, PhD"
 position: "Bioinformatician"
 address: "10 Marmaduke Street, Bristol BS3 4SQ, United Kingdom"
-phone: +44 (0) 7711 045747
+phone: 
 Nationality: "Canadian, UK Visa Status: EEA Family Permit"
 www: hobrien.github.io
 email: "heath.obrien@gmail.com"
 twitter: heath_obrien
 github: hobrien
-linkedin: heath-o-brien-198145b2
+linkedin: genome-informatics
 scholar: hdQp2NsAAAAJ 
 aboutme: "I have 20 years of experience analyzing genetic data, both in academia and the private sector. I’ve worked on functional genomics, high-throughput sequencing and genotyping data from plants, fungi, bacteria and humans. I enjoy working on interdisciplinary projects and leading teams with diverse skill sets. I also have strong communication skills, having co-authored over 25 publications and presented my research at conferences in 7 countries."
 date: "`r format(Sys.time(), '%B %Y')`"
@@ -34,21 +34,21 @@ library(tibble)
 ```{r}
 tribble(
   ~ role, ~ company, ~ loc, ~ dates, ~ details,
-  "Lead Bioinformatician", "Living DNA", "Frome, UK", "2018-Present", "Leading a team of 6 bioinformaticians and data scientists developing methods to derive ancestry and health insights from direct-to-consumer genetics",
-  "Lead Bioinformatician", "Living DNA", "Frome, UK", "2018-Present", "Managing partnerships with data suppliers, academic scientists and business incubators",
-  "Lead Bioinformatician", "Living DNA", "Frome, UK", "2018-Present", "Working to secure external funding to develop novel genomic prediction approaches",
-    "Lead Bioinformatician", "Living DNA", "Frome, UK", "2018-Present", "Collaboration with the engineering team to deploy processing pipelines at scale and to improve all steps of sample processing and data delivery",
+  "Bioinformatician", "Theolytics", "Oxford UK", "2020-2022", "Managing pipelines and compute architecture for genomic analyses of oncolytic viruses",
+  "Bioinformatician", "Theolytics", "Oxford UK", "2020-2022", "Advising on research strategy and on the design and analysis of experiments",
+  "Bioinformatician", "Theolytics", "Oxford UK", "2020-2022", "Managing partnerships with other companies and academic scientists",
+  "Lead Bioinformatician", "Living DNA", "Frome, UK", "2018-2020", "Leading a team of 6 bioinformaticians and data scientists developing methods to derive ancestry and health insights from  genotyping data",
+  "Lead Bioinformatician", "Living DNA", "Frome, UK", "2018-2020", "Working to secure external funding to develop novel genomic prediction approaches",
+    "Lead Bioinformatician", "Living DNA", "Frome, UK", "2018-2020", "Collaboration with the engineering team to deploy processing pipelines at scale and to improve all steps of sample processing and data delivery",
   "Research Associate", "MRC Centre for Neuropsychiatric Genetics and Genomics", "Cardiff, UK", "2016-2018", "Differential gene expression and eQTL analyses on human brain samples", 
-  "Research Associate", "MRC Centre for Neuropsychiatric Genetics and Genomics", "Cardiff, UK", "2016-2018", "Integration of functional genomics data with large-scale population genomics datasets for schizophrenia and other neurophychiatric disorders", 
+  "Research Associate", "MRC Centre for Neuropsychiatric Genetics and Genomics", "Cardiff, UK", "2016-2018", "Integration of functional genomic and large-scale population genetic datasets for schizophrenia and other neurophychiatric disorders", 
   "Research Associate", "MRC Centre for Neuropsychiatric Genetics and Genomics", "Cardiff, UK", "2016-2018", "Organization of training seminars on data science (Rstudio, MySQL), version control (Git), and pipeline development (Snakemake, Bash)",  
    "Research Associate", "MRC Centre for Neuropsychiatric Genetics and Genomics", "Cardiff, UK", "2016-2018", "Deployment of results on the web using R-Shiny",
   "Bioinformatician", "University of Bristol", "Bristol, UK", "2013-2016", "Comparative transcriptomics to determine the genetic basis of cell wall patterning responsible for colour-production in plant leaves",
-  "Bioinformatician", "University of Bristol", "Bristol, UK", "2013-2016", "Electron microscopy of light scattering nanostructures in plants and algae",
 "Bioinformatician", "University of Bristol", "Bristol, UK", "2013-2016", "Acting group leader during nine-month family leave cover (overseeing a team of three staff and two students, managing procurement)",
-"Postdoctoral Fellow", "University of Toronto", "Toronto, ON, Canada", "2008-2013", "De novo assembly and comparative analyses of bacterial genomes",
+"Postdoctoral Fellow", "University of Toronto", "Toronto, ON, Canada", "2008-2013", "Comparative analyses of bacterial genomes",
 "Postdoctoral Fellow", "University of Toronto", "Toronto, ON, Canada", "2008-2013", "Cloning of virulence factors and characterization using in-planta infection assays",
-"Postdoctoral Fellow", "University of Toronto",  "Toronto, ON, Canada", "2008-2013", "Supervision of undergraduate students",
-"Lab Administrator", "Duke University",  "Durham, NC, USA", "2006-2008", "Oversight of teaching labs for General and Advanced Microbiology",
+"Lab Administrator", "Duke University",  "Durham, NC, USA", "2006-2008", "Oversight of Microbiology teaching labs",
 "Lab Administrator", "Duke University",  "Durham, NC, USA", "2006-2008", "Managed one lab technician and eight teaching assistants") %>% 
   detailed_entries(role, dates, loc, company, details)
 ```
